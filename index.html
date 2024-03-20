@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criptografia e Descriptografia de Mensagens</title>
+</head>
+    <link rel="stylesheet" type="text/css" href="style.css"></html>
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <script type="text/javascript" src="script.js"></script>
+<body>
+
+    <div class="container">
+        <h1>Criptografia e Descriptografia de Mensagens</h1>
+        <div class="textarea-container">
+            <textarea id="inputText" placeholder="Insira a mensagem aqui..."></textarea>
+        </div>
+        <div class="input-container">
+            <button onclick="encrypt()">Criptografar</button>
+            <button onclick="decrypt()">Descriptografar</button>
+            <button id="copyButton" onclick="copyToClipboard()" style="display: none;">Copiar Criptografia</button>
+            <button onclick="toggleHistory()">Ver Histórico</button>
+        </div>
+        <div class="outputBox">
+            <h2 class="output-title">Mensagem Criptografada:</h2>
+            <p class="outputText" id="outputText">Não há mensagens no momento...</p>
+        </div>
+        <div class="history-box">
+            <h2 class="history-title">Histórico de Mensagens Criptografadas</h2>
+            <ul class="history-list" id="historyList"></ul>
+        </div>
+    </div>
+    
+</body>
+</html>
